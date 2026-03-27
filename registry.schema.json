@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenClaw External Skills Registry",
+  "type": "object",
+  "required": ["version", "generatedAt", "skills"],
+  "properties": {
+    "version": {"type": "integer", "minimum": 1},
+    "generatedAt": {"type": "string"},
+    "repo": {"type": "string"},
+    "skills": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/skill"}
+    }
+  },
+  "definitions": {
+    "skill": {
+      "type": "object",
+      "required": ["key", "category", "path", "title", "shortDesc", "tags", "useCases"],
+      "properties": {
+        "key": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]{1,63}$",
+          "description": "Stable id; used as folder name under workspace/skills when mounted."
+        },
+        "category": {"type": "string"},
+        "path": {
+          "type": "string",
+          "description": "Repo-relative directory containing SKILL.md."
+        },
+        "title": {"type": "string"},
+        "shortDesc": {"type": "string"},
+        "tags": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1
+        },
+        "useCases": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 3
+        },
+        "examples": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "requires": {
+          "type": "object",
+          "properties": {
+            "tools": {"type": "array", "items": {"type": "string"}},
+            "env": {"type": "array", "items": {"type": "string"}}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
