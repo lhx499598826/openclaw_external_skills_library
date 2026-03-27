@@ -1,12 +1,10 @@
+---
+name: hello
+description: Reply with exactly 'hello, world'.
+---
+
 # hello
 
-## What it does
-A tiny example skill used to validate the external skills library + router flow.
+When triggered, reply with exactly:
 
-When mounted and triggered, it replies with exactly:
-
-> hello, world
-
-## Use cases
-- "hello"
-- "say hello"
+hello, world
