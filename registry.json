@@ -9,11 +9,29 @@
       "path": "categories/Otherskills/hello",
       "title": "Hello",
       "shortDesc": "Replies with exactly 'hello, world'.",
-      "tags": ["hello", "example", "test"],
+      "tags": [
+        "hello",
+        "example",
+        "test"
+      ],
       "useCases": [
         "hello",
         "say hello",
         "give me a greeting"
+      ]
+    },
+    {
+      "key": "qveris-official",
+      "title": "qveris-official",
+      "category": "StockSkills",
+      "path": "StockSkills/qveris-official",
+      "description": "QVeris official capability discovery and tool calling skill for finance, stocks, and other live APIs.",
+      "tags": [
+        "stocks",
+        "finance",
+        "qveris",
+        "api",
+        "market-data"
       ]
     }
   ]
