@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-27T11:30:00Z",
+  "generatedAt": "2026-04-02T15:42:40Z",
   "repo": "lhx499598826/openclaw_external_skills_library",
   "skills": [
     {
@@ -21,17 +21,507 @@
       ]
     },
     {
-      "key": "qveris-official",
-      "title": "qveris-official",
-      "category": "StockSkills",
-      "path": "StockSkills/qveris-official",
-      "description": "QVeris official capability discovery and tool calling skill for finance, stocks, and other live APIs.",
+      "key": "clinvar-database",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/clinvar-database",
+      "title": "clinvar-database",
+      "shortDesc": "Clinical variant assertions and significance lookup from NCBI ClinVar.",
       "tags": [
-        "stocks",
-        "finance",
+        "clinvar",
+        "variants",
+        "clinical-genetics",
+        "pathogenicity"
+      ],
+      "useCases": [
+        "look up a variant in clinvar",
+        "find clinvar pathogenicity for BRCA1 variant",
+        "annotate clinical significance for variants"
+      ]
+    },
+    {
+      "key": "ensembl-database",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/ensembl-database",
+      "title": "ensembl-database",
+      "shortDesc": "Ensembl genome and annotation access for genes, sequences, orthologs, and VEP-style variant queries.",
+      "tags": [
+        "ensembl",
+        "genomics",
+        "annotation",
+        "orthologs"
+      ],
+      "useCases": [
+        "look up an Ensembl gene",
+        "retrieve sequence from ensembl",
+        "find orthologs across species"
+      ]
+    },
+    {
+      "key": "drugbank-database",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/drugbank-database",
+      "title": "drugbank-database",
+      "shortDesc": "DrugBank data access for drug properties, targets, pharmacology, and interaction analysis.",
+      "tags": [
+        "drugbank",
+        "drugs",
+        "targets",
+        "pharmacology"
+      ],
+      "useCases": [
+        "search drugbank for a drug",
+        "find drug targets",
+        "analyze drug-drug interactions"
+      ]
+    },
+    {
+      "key": "string-database",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/string-database",
+      "title": "string-database",
+      "shortDesc": "STRING protein-protein interaction network lookup and enrichment guidance.",
+      "tags": [
+        "string",
+        "ppi",
+        "protein-network",
+        "enrichment"
+      ],
+      "useCases": [
+        "find protein interaction partners",
+        "query STRING for TP53",
+        "run functional enrichment on proteins"
+      ]
+    },
+    {
+      "key": "metabolomics-workbench-database",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/metabolomics-workbench-database",
+      "title": "metabolomics-workbench-database",
+      "shortDesc": "NIH Metabolomics Workbench access for studies, metabolites, metadata, and mass-spectrometry lookups.",
+      "tags": [
+        "metabolomics",
+        "metabolite",
+        "nih",
+        "mass-spec"
+      ],
+      "useCases": [
+        "search metabolomics workbench",
+        "look up a metabolite study",
+        "retrieve metabolomics study metadata"
+      ]
+    },
+    {
+      "key": "gwas-database",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/gwas-database",
+      "title": "gwas-database",
+      "shortDesc": "GWAS Catalog querying for SNP-trait associations, studies, and summary-statistics context.",
+      "tags": [
+        "gwas",
+        "genetics",
+        "traits",
+        "snps"
+      ],
+      "useCases": [
+        "find GWAS hits for a disease",
+        "search rsID in GWAS catalog",
+        "look up trait-associated variants"
+      ]
+    },
+    {
+      "key": "pubmed-search",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/pubmed-search",
+      "title": "pubmed-search",
+      "shortDesc": "PubMed literature search for biomedical papers and recent research references.",
+      "tags": [
+        "pubmed",
+        "literature",
+        "papers",
+        "biomedical"
+      ],
+      "useCases": [
+        "find papers on CRISPR delivery",
+        "search pubmed for cancer studies",
+        "look up recent biomedical literature"
+      ]
+    },
+    {
+      "key": "bio-variant-annotation",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/bio-variant-annotation",
+      "title": "bio-variant-annotation",
+      "shortDesc": "Variant annotation workflows using tools like bcftools, VEP, SnpEff, and ANNOVAR.",
+      "tags": [
+        "variant-annotation",
+        "vep",
+        "snpeff",
+        "vcf"
+      ],
+      "useCases": [
+        "annotate my VCF",
+        "add functional consequences to variants",
+        "annotate variants with clinical databases"
+      ]
+    },
+    {
+      "key": "bio-variant-calling-clinical-interpretation",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/bio-variant-calling-clinical-interpretation",
+      "title": "bio-variant-calling-clinical-interpretation",
+      "shortDesc": "Clinical interpretation of called variants with ClinVar, ACMG logic, and pathogenicity prioritization.",
+      "tags": [
+        "clinical-variants",
+        "acmg",
+        "clinvar",
+        "interpretation"
+      ],
+      "useCases": [
+        "interpret variant pathogenicity",
+        "prioritize clinically relevant variants",
+        "apply ACMG-style reasoning to variants"
+      ]
+    },
+    {
+      "key": "bio-gatk-variant-calling",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/bio-gatk-variant-calling",
+      "title": "bio-gatk-variant-calling",
+      "shortDesc": "GATK HaplotypeCaller best-practice guidance for germline SNP/indel calling and joint genotyping.",
+      "tags": [
+        "gatk",
+        "variant-calling",
+        "gvcf",
+        "genomics"
+      ],
+      "useCases": [
+        "run GATK HaplotypeCaller",
+        "call variants from BAM",
+        "joint genotype a cohort"
+      ]
+    },
+    {
+      "key": "bio-vcf-manipulation",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/bio-vcf-manipulation",
+      "title": "bio-vcf-manipulation",
+      "shortDesc": "VCF restructuring and comparison using bcftools merge, concat, sort, intersect, and subset operations.",
+      "tags": [
+        "vcf",
+        "bcftools",
+        "merge",
+        "compare"
+      ],
+      "useCases": [
+        "merge VCF files",
+        "intersect two callsets",
+        "subset a VCF by sample or region"
+      ]
+    },
+    {
+      "key": "bio-vcf-statistics",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/bio-vcf-statistics",
+      "title": "bio-vcf-statistics",
+      "shortDesc": "VCF summary metrics, concordance checks, and quality statistics with bcftools.",
+      "tags": [
+        "vcf",
+        "stats",
+        "concordance",
+        "quality"
+      ],
+      "useCases": [
+        "summarize a VCF",
+        "check sample concordance",
+        "compute variant quality metrics"
+      ]
+    },
+    {
+      "key": "bulk-deseq2-analysis",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/bulk-deseq2-analysis",
+      "title": "bulk-deseq2-analysis",
+      "shortDesc": "Bulk RNA-seq differential-expression workflow using omicverse/PyDESeq2-style DESeq2 analysis.",
+      "tags": [
+        "bulk-rna-seq",
+        "deseq2",
+        "differential-expression",
+        "omicverse"
+      ],
+      "useCases": [
+        "run bulk RNA-seq DE analysis",
+        "do DESeq2 with omicverse",
+        "analyze treated vs control counts"
+      ]
+    },
+    {
+      "key": "pydeseq2",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/pydeseq2",
+      "title": "pydeseq2",
+      "shortDesc": "PyDESeq2-based differential gene expression analysis for bulk RNA-seq counts in Python.",
+      "tags": [
+        "pydeseq2",
+        "deseq2",
+        "rna-seq",
+        "differential-expression"
+      ],
+      "useCases": [
+        "run PyDESeq2",
+        "analyze differential expression in python",
+        "compare treated vs control RNA-seq"
+      ]
+    },
+    {
+      "key": "fastq-analysis",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/fastq-analysis",
+      "title": "fastq-analysis",
+      "shortDesc": "FASTQ-to-count-matrix RNA-seq guidance including SRA download, QC, alignment, and quantification.",
+      "tags": [
+        "fastq",
+        "rna-seq",
+        "alignment",
+        "qc"
+      ],
+      "useCases": [
+        "analyze FASTQ files",
+        "run RNA-seq alignment workflow",
+        "download SRA and quantify counts"
+      ]
+    },
+    {
+      "key": "bio-rnaseq-qc",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/bio-rnaseq-qc",
+      "title": "bio-rnaseq-qc",
+      "shortDesc": "RNA-seq-specific quality control such as strandedness, rRNA contamination, and gene body coverage.",
+      "tags": [
+        "rna-seq",
+        "qc",
+        "rseqc",
+        "quality-control"
+      ],
+      "useCases": [
+        "check RNA-seq quality",
+        "measure rRNA contamination",
+        "verify strandedness"
+      ]
+    },
+    {
+      "key": "bio-copy-number-cnvkit-analysis",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/bio-copy-number-cnvkit-analysis",
+      "title": "bio-copy-number-cnvkit-analysis",
+      "shortDesc": "CNVkit workflows for CNV detection from exome or targeted sequencing.",
+      "tags": [
+        "cnv",
+        "cnvkit",
+        "copy-number",
+        "wes"
+      ],
+      "useCases": [
+        "detect CNVs with CNVkit",
+        "analyze exome copy number",
+        "run tumor-normal CNV workflow"
+      ]
+    },
+    {
+      "key": "galaxy-bridge",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/galaxy-bridge",
+      "title": "galaxy-bridge",
+      "shortDesc": "Galaxy bioinformatics tool discovery and workflow recommendation bridge for remote Galaxy ecosystems.",
+      "tags": [
+        "galaxy",
+        "bioinformatics-tools",
+        "workflow",
+        "usegalaxy"
+      ],
+      "useCases": [
+        "find a Galaxy tool for RNA-seq",
+        "search usegalaxy tools",
+        "recommend a Galaxy workflow"
+      ]
+    },
+    {
+      "key": "lamindb",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/lamindb",
+      "title": "lamindb",
+      "shortDesc": "LaminDB data-management guidance for biological datasets, lineage, FAIR metadata, and ontology-backed curation.",
+      "tags": [
+        "lamindb",
+        "data-management",
+        "fair",
+        "biology"
+      ],
+      "useCases": [
+        "manage biological datasets with LaminDB",
+        "track lineage for omics data",
+        "curate FAIR metadata"
+      ]
+    },
+    {
+      "key": "latchbio-integration",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/latchbio-integration",
+      "title": "latchbio-integration",
+      "shortDesc": "Latch workflow-platform integration for serverless bioinformatics pipelines and cloud data objects.",
+      "tags": [
+        "latch",
+        "workflow",
+        "bioinformatics",
+        "cloud"
+      ],
+      "useCases": [
+        "build a Latch workflow",
+        "register a bioinformatics pipeline on Latch",
+        "use LatchFile or LatchDir"
+      ]
+    },
+    {
+      "key": "labarchive-integration",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/labarchive-integration",
+      "title": "labarchive-integration",
+      "shortDesc": "LabArchives ELN API automation for notebooks, entries, attachments, and backups.",
+      "tags": [
+        "labarchives",
+        "eln",
+        "notebook",
+        "api"
+      ],
+      "useCases": [
+        "automate LabArchives notebook tasks",
+        "backup a LabArchives notebook",
+        "create ELN entries programmatically"
+      ]
+    },
+    {
+      "key": "ukb-navigator",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/ukb-navigator",
+      "title": "ukb-navigator",
+      "shortDesc": "Semantic search over UK Biobank fields and publications to find relevant variables for a study question.",
+      "tags": [
+        "uk-biobank",
+        "ukb",
+        "schema-search",
+        "cohort"
+      ],
+      "useCases": [
+        "find UK Biobank variables for blood pressure",
+        "search UKB fields by research question",
+        "look up a UK Biobank field"
+      ]
+    },
+    {
+      "key": "gwas-prs",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/gwas-prs",
+      "title": "gwas-prs",
+      "shortDesc": "Polygenic risk score calculation from DTC genotype files using PGS Catalog scoring files.",
+      "tags": [
+        "prs",
+        "polygenic-risk",
+        "pgs-catalog",
+        "genetics"
+      ],
+      "useCases": [
+        "calculate a polygenic risk score",
+        "score 23andMe data with PGS Catalog",
+        "estimate PRS percentile"
+      ]
+    },
+    {
+      "key": "pharmgx-reporter",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/pharmgx-reporter",
+      "title": "pharmgx-reporter",
+      "shortDesc": "Pharmacogenomic report generation from consumer genotype files using CPIC-style drug-gene mappings.",
+      "tags": [
+        "pharmacogenomics",
+        "cpic",
+        "dtc-genetics",
+        "drug-gene"
+      ],
+      "useCases": [
+        "create a pharmacogenomics report",
+        "analyze 23andMe drug response markers",
+        "check CPIC-style gene-drug effects"
+      ]
+    },
+    {
+      "key": "claw-metagenomics",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/claw-metagenomics",
+      "title": "claw-metagenomics",
+      "shortDesc": "Shotgun metagenomics workflow covering taxonomy, resistome, and functional-pathway profiling.",
+      "tags": [
+        "metagenomics",
+        "taxonomy",
+        "resistome",
+        "humann"
+      ],
+      "useCases": [
+        "profile a metagenomics sample",
+        "analyze resistome from FASTQ",
+        "run taxonomy and pathway profiling"
+      ]
+    },
+    {
+      "key": "bio-proteomics-quantification",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/bio-proteomics-quantification",
+      "title": "bio-proteomics-quantification",
+      "shortDesc": "Proteomics quantification guidance for LFQ, TMT/iTRAQ, SILAC, and differential protein-abundance workflows.",
+      "tags": [
+        "proteomics",
+        "mass-spec",
+        "lfq",
+        "tmt"
+      ],
+      "useCases": [
+        "quantify proteins from mass spec",
+        "analyze TMT proteomics",
+        "do LFQ normalization"
+      ]
+    },
+    {
+      "key": "bio-tumor-fraction-estimation",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/bio-tumor-fraction-estimation",
+      "title": "bio-tumor-fraction-estimation",
+      "shortDesc": "ctDNA tumor-fraction estimation from shallow whole-genome sequencing using ichorCNA.",
+      "tags": [
+        "ctdna",
+        "tumor-fraction",
+        "liquid-biopsy",
+        "ichorCNA"
+      ],
+      "useCases": [
+        "estimate tumor fraction from cfDNA",
+        "run ichorCNA on shallow WGS",
+        "quantify ctDNA burden"
+      ]
+    },
+    {
+      "key": "qveris-official",
+      "category": "StockSkills",
+      "path": "categories/StockSkills/qveris-official",
+      "title": "qveris-official",
+      "shortDesc": "Official QVeris capability discovery skill for finance workflows; discovers currently available QVeris stock, sector, market, and capital-flow tools for the authenticated account, subject to upstream coverage and credits.",
+      "tags": [
         "qveris",
-        "api",
-        "market-data"
+        "finance",
+        "stocks",
+        "capital-flow"
+      ],
+      "useCases": [
+        "discover available QVeris stock tools",
+        "check QVeris capital-flow APIs",
+        "inspect finance tools exposed by QVeris"
       ]
     }
   ]
