@@ -27,9 +27,19 @@ Use this skill when:
 - You want an official QVeris-backed capability discovery step before building a finance workflow
 - You need to verify whether a desired QVeris endpoint is exposed to the current account
 
+## Commands
+
+```bash
+python3 {baseDir}/scripts/qveris_tool.py search "capital flow A shares today" --limit 5
+python3 {baseDir}/scripts/qveris_tool.py inspect <tool_id> [<tool_id> ...]
+python3 {baseDir}/scripts/qveris_tool.py execute <tool_id> --search-id <search_id> --params '{"foo":"bar"}'
+```
+
 ## Notes
 
 - Requires `QVERIS_API_KEY`
+- This skill follows the official QVeris flow: `search` → `inspect` → `execute`
 - Discovery responses may include account-specific tools and remaining credits
 - QVeris uses credits and rate limits; avoid unnecessary repeated discovery calls
 - Some discovered tools may be symbol-specific rather than market-wide ranking endpoints
+- The legacy `.mjs` files in this folder are packaging stubs; the real working entrypoint is `scripts/qveris_tool.py`
