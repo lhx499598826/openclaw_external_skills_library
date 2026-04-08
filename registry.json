@@ -523,6 +523,121 @@
         "check QVeris capital-flow APIs",
         "inspect finance tools exposed by QVeris"
       ]
+    },
+    {
+      "key": "xcrawl-scrape",
+      "category": "UniversalSkills",
+      "path": "categories/UniversalSkills/xcrawl-scrape",
+      "title": "xcrawl-scrape",
+      "shortDesc": "XCrawl single-page web scraping skill for extracting one URL as markdown, HTML, links, screenshot, or structured JSON via XCrawl API.",
+      "tags": [
+        "xcrawl",
+        "scrape",
+        "web-scraping",
+        "single-page",
+        "markdown",
+        "html",
+        "json-extraction",
+        "screenshot",
+        "url-extraction",
+        "ai-agent"
+      ],
+      "useCases": [
+        "scrape a webpage and return markdown",
+        "extract structured json from a url",
+        "fetch one page with XCrawl",
+        "抓取单个网页内容",
+        "把网页转成 markdown",
+        "提取页面里的链接和正文",
+        "scrape a page for llm input",
+        "extract page data from a website url"
+      ]
+    },
+    {
+      "key": "xcrawl-map",
+      "category": "UniversalSkills",
+      "path": "categories/UniversalSkills/xcrawl-map",
+      "title": "xcrawl-map",
+      "shortDesc": "XCrawl site URL discovery skill for listing indexed or discoverable URLs under a domain or path prefix before crawling.",
+      "tags": [
+        "xcrawl",
+        "map",
+        "url-discovery",
+        "site-map",
+        "website-structure",
+        "crawl-planning",
+        "domain-urls",
+        "discovery",
+        "ai-agent"
+      ],
+      "useCases": [
+        "list all urls under a website",
+        "discover pages in a site before crawling",
+        "map a domain structure",
+        "find docs urls under a website",
+        "列出网站下的所有页面链接",
+        "发现某个站点的 url 结构",
+        "map urls for crawl planning",
+        "get all discoverable urls from a domain"
+      ]
+    },
+    {
+      "key": "xcrawl-crawl",
+      "category": "UniversalSkills",
+      "path": "categories/UniversalSkills/xcrawl-crawl",
+      "title": "xcrawl-crawl",
+      "shortDesc": "XCrawl bounded website crawling skill for async multi-page extraction with depth, limit, polling, and markdown or JSON-ready outputs.",
+      "tags": [
+        "xcrawl",
+        "crawl",
+        "site-crawl",
+        "multi-page",
+        "async",
+        "polling",
+        "depth-limit",
+        "markdown",
+        "json",
+        "ai-agent"
+      ],
+      "useCases": [
+        "crawl a website and collect multiple pages",
+        "start an async crawl job",
+        "crawl docs pages with max depth and limit",
+        "批量抓取网站多个页面",
+        "异步爬取整个站点",
+        "抓取文档站并轮询结果",
+        "crawl a domain for rag data",
+        "extract many pages from a site"
+      ]
+    },
+    {
+      "key": "xcrawl-search",
+      "category": "UniversalSkills",
+      "path": "categories/UniversalSkills/xcrawl-search",
+      "title": "xcrawl-search",
+      "shortDesc": "XCrawl SERP and web search skill for querying Google-style search results with keyword, region, language, and result-limit controls.",
+      "tags": [
+        "xcrawl",
+        "search",
+        "serp",
+        "google-search",
+        "search-results",
+        "keyword-search",
+        "region",
+        "language",
+        "web-search",
+        "ai-agent"
+      ],
+      "useCases": [
+        "search the web with XCrawl",
+        "get google search results by keyword",
+        "run a serp query with region and language",
+        "按关键词搜索网页结果",
+        "抓取 google 搜索结果",
+        "获取指定地区语言的搜索结果",
+        "search for top web results",
+        "collect serp data for a query"
+      ]
     }
   ]
 }
