@@ -13,7 +13,7 @@ from render_report import render_json, render_summary
 
 
 def run_clawvet(wrapper: Path, target_path: str) -> Dict:
-    cmd = [str(wrapper), target_path, "--format", "json"]
+    cmd = ["bash", str(wrapper), target_path, "--format", "json"]
     try:
         proc = subprocess.run(cmd, capture_output=True, text=True, check=False)
     except Exception as e:
@@ -233,6 +233,43 @@ def main() -> None:
             "scanner": scanner,
             "llm_review": llm_review,
             "decision": decision,
+        }
+        if args.json or not args.summary:
+            print(render_json(report))
+        if args.summary:
+            if args.json:
+                print()
+            print(render_summary(report))
+    except RuntimeError as e:
+        report = {
+            "skill": {
+                "name": Path(target_info["local_path"]).name if target_info.get("local_path") else args.target,
+                "path": target_info.get("local_path"),
+                "source": target_info.get("resolved_source", args.target),
+                "source_type": target_info.get("source_type", "unknown"),
+                "version": None,
+            },
+            "evidence": {},
+            "scanner": {
+                "engine": "clawvet",
+                "available": False,
+                "soft_failed": True,
+                "command_used": "",
+                "score": None,
+                "findings": [],
+                "errors": [{"type": "target_parse_failed", "message": str(e)}],
+            },
+            "llm_review": {},
+            "decision": {
+                "verdict": "review",
+                "severity": "medium",
+                "confidence": "low",
+                "reasons": [str(e)],
+                "required_mitigations": [
+                    "Point the tool at a single skill folder containing SKILL.md.",
+                    "If using GitHub, provide a repository that is itself a skill, not a multi-skill library root.",
+                ],
+            },
         }
         if args.json or not args.summary:
             print(render_json(report))
