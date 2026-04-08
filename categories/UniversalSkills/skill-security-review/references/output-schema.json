@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Skill Security Review Output",
+  "type": "object",
+  "required": ["skill", "evidence", "scanner", "llm_review", "decision"],
+  "properties": {
+    "skill": {"type": "object"},
+    "evidence": {"type": "object"},
+    "scanner": {"type": "object"},
+    "llm_review": {"type": "object"},
+    "decision": {"type": "object"}
+  },
+  "additionalProperties": false
+}

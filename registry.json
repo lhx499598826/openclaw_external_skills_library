@@ -1,149 +1,96 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-02T15:42:40Z",
+  "generatedAt": "2026-04-08T12:54:57Z",
   "repo": "lhx499598826/openclaw_external_skills_library",
   "skills": [
     {
-      "key": "hello",
-      "category": "Otherskills",
-      "path": "categories/Otherskills/hello",
-      "title": "Hello",
-      "shortDesc": "Replies with exactly 'hello, world'.",
+      "key": "bio-copy-number-cnvkit-analysis",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/bio-copy-number-cnvkit-analysis",
+      "title": "bio-copy-number-cnvkit-analysis",
+      "shortDesc": "CNVkit workflows for CNV detection from exome or targeted sequencing.",
       "tags": [
-        "hello",
-        "example",
-        "test"
+        "cnv",
+        "cnvkit",
+        "copy-number",
+        "wes"
       ],
       "useCases": [
-        "hello",
-        "say hello",
-        "give me a greeting"
+        "detect CNVs with CNVkit",
+        "analyze exome copy number",
+        "run tumor-normal CNV workflow"
       ]
     },
     {
-      "key": "clinvar-database",
+      "key": "bio-gatk-variant-calling",
       "category": "Medicalskills",
-      "path": "categories/Medicalskills/clinvar-database",
-      "title": "clinvar-database",
-      "shortDesc": "Clinical variant assertions and significance lookup from NCBI ClinVar.",
+      "path": "categories/Medicalskills/bio-gatk-variant-calling",
+      "title": "bio-gatk-variant-calling",
+      "shortDesc": "GATK HaplotypeCaller best-practice guidance for germline SNP/indel calling and joint genotyping.",
       "tags": [
-        "clinvar",
-        "variants",
-        "clinical-genetics",
-        "pathogenicity"
+        "gatk",
+        "variant-calling",
+        "gvcf",
+        "genomics"
       ],
       "useCases": [
-        "look up a variant in clinvar",
-        "find clinvar pathogenicity for BRCA1 variant",
-        "annotate clinical significance for variants"
+        "run GATK HaplotypeCaller",
+        "call variants from BAM",
+        "joint genotype a cohort"
       ]
     },
     {
-      "key": "ensembl-database",
+      "key": "bio-proteomics-quantification",
       "category": "Medicalskills",
-      "path": "categories/Medicalskills/ensembl-database",
-      "title": "ensembl-database",
-      "shortDesc": "Ensembl genome and annotation access for genes, sequences, orthologs, and VEP-style variant queries.",
+      "path": "categories/Medicalskills/bio-proteomics-quantification",
+      "title": "bio-proteomics-quantification",
+      "shortDesc": "Proteomics quantification guidance for LFQ, TMT/iTRAQ, SILAC, and differential protein-abundance workflows.",
       "tags": [
-        "ensembl",
-        "genomics",
-        "annotation",
-        "orthologs"
+        "proteomics",
+        "mass-spec",
+        "lfq",
+        "tmt"
       ],
       "useCases": [
-        "look up an Ensembl gene",
-        "retrieve sequence from ensembl",
-        "find orthologs across species"
+        "quantify proteins from mass spec",
+        "analyze TMT proteomics",
+        "do LFQ normalization"
       ]
     },
     {
-      "key": "drugbank-database",
+      "key": "bio-rnaseq-qc",
       "category": "Medicalskills",
-      "path": "categories/Medicalskills/drugbank-database",
-      "title": "drugbank-database",
-      "shortDesc": "DrugBank data access for drug properties, targets, pharmacology, and interaction analysis.",
+      "path": "categories/Medicalskills/bio-rnaseq-qc",
+      "title": "bio-rnaseq-qc",
+      "shortDesc": "RNA-seq-specific quality control such as strandedness, rRNA contamination, and gene body coverage.",
       "tags": [
-        "drugbank",
-        "drugs",
-        "targets",
-        "pharmacology"
+        "rna-seq",
+        "qc",
+        "rseqc",
+        "quality-control"
       ],
       "useCases": [
-        "search drugbank for a drug",
-        "find drug targets",
-        "analyze drug-drug interactions"
+        "check RNA-seq quality",
+        "measure rRNA contamination",
+        "verify strandedness"
       ]
     },
     {
-      "key": "string-database",
+      "key": "bio-tumor-fraction-estimation",
       "category": "Medicalskills",
-      "path": "categories/Medicalskills/string-database",
-      "title": "string-database",
-      "shortDesc": "STRING protein-protein interaction network lookup and enrichment guidance.",
+      "path": "categories/Medicalskills/bio-tumor-fraction-estimation",
+      "title": "bio-tumor-fraction-estimation",
+      "shortDesc": "ctDNA tumor-fraction estimation from shallow whole-genome sequencing using ichorCNA.",
       "tags": [
-        "string",
-        "ppi",
-        "protein-network",
-        "enrichment"
+        "ctdna",
+        "tumor-fraction",
+        "liquid-biopsy",
+        "ichorCNA"
       ],
       "useCases": [
-        "find protein interaction partners",
-        "query STRING for TP53",
-        "run functional enrichment on proteins"
-      ]
-    },
-    {
-      "key": "metabolomics-workbench-database",
-      "category": "Medicalskills",
-      "path": "categories/Medicalskills/metabolomics-workbench-database",
-      "title": "metabolomics-workbench-database",
-      "shortDesc": "NIH Metabolomics Workbench access for studies, metabolites, metadata, and mass-spectrometry lookups.",
-      "tags": [
-        "metabolomics",
-        "metabolite",
-        "nih",
-        "mass-spec"
-      ],
-      "useCases": [
-        "search metabolomics workbench",
-        "look up a metabolite study",
-        "retrieve metabolomics study metadata"
-      ]
-    },
-    {
-      "key": "gwas-database",
-      "category": "Medicalskills",
-      "path": "categories/Medicalskills/gwas-database",
-      "title": "gwas-database",
-      "shortDesc": "GWAS Catalog querying for SNP-trait associations, studies, and summary-statistics context.",
-      "tags": [
-        "gwas",
-        "genetics",
-        "traits",
-        "snps"
-      ],
-      "useCases": [
-        "find GWAS hits for a disease",
-        "search rsID in GWAS catalog",
-        "look up trait-associated variants"
-      ]
-    },
-    {
-      "key": "pubmed-search",
-      "category": "Medicalskills",
-      "path": "categories/Medicalskills/pubmed-search",
-      "title": "pubmed-search",
-      "shortDesc": "PubMed literature search for biomedical papers and recent research references.",
-      "tags": [
-        "pubmed",
-        "literature",
-        "papers",
-        "biomedical"
-      ],
-      "useCases": [
-        "find papers on CRISPR delivery",
-        "search pubmed for cancer studies",
-        "look up recent biomedical literature"
+        "estimate tumor fraction from cfDNA",
+        "run ichorCNA on shallow WGS",
+        "quantify ctDNA burden"
       ]
     },
     {
@@ -180,24 +127,6 @@
         "interpret variant pathogenicity",
         "prioritize clinically relevant variants",
         "apply ACMG-style reasoning to variants"
-      ]
-    },
-    {
-      "key": "bio-gatk-variant-calling",
-      "category": "Medicalskills",
-      "path": "categories/Medicalskills/bio-gatk-variant-calling",
-      "title": "bio-gatk-variant-calling",
-      "shortDesc": "GATK HaplotypeCaller best-practice guidance for germline SNP/indel calling and joint genotyping.",
-      "tags": [
-        "gatk",
-        "variant-calling",
-        "gvcf",
-        "genomics"
-      ],
-      "useCases": [
-        "run GATK HaplotypeCaller",
-        "call variants from BAM",
-        "joint genotype a cohort"
       ]
     },
     {
@@ -255,21 +184,75 @@
       ]
     },
     {
-      "key": "pydeseq2",
+      "key": "claw-metagenomics",
       "category": "Medicalskills",
-      "path": "categories/Medicalskills/pydeseq2",
-      "title": "pydeseq2",
-      "shortDesc": "PyDESeq2-based differential gene expression analysis for bulk RNA-seq counts in Python.",
+      "path": "categories/Medicalskills/claw-metagenomics",
+      "title": "claw-metagenomics",
+      "shortDesc": "Shotgun metagenomics workflow covering taxonomy, resistome, and functional-pathway profiling.",
       "tags": [
-        "pydeseq2",
-        "deseq2",
-        "rna-seq",
-        "differential-expression"
+        "metagenomics",
+        "taxonomy",
+        "resistome",
+        "humann"
       ],
       "useCases": [
-        "run PyDESeq2",
-        "analyze differential expression in python",
-        "compare treated vs control RNA-seq"
+        "profile a metagenomics sample",
+        "analyze resistome from FASTQ",
+        "run taxonomy and pathway profiling"
+      ]
+    },
+    {
+      "key": "clinvar-database",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/clinvar-database",
+      "title": "clinvar-database",
+      "shortDesc": "Clinical variant assertions and significance lookup from NCBI ClinVar.",
+      "tags": [
+        "clinvar",
+        "variants",
+        "clinical-genetics",
+        "pathogenicity"
+      ],
+      "useCases": [
+        "look up a variant in clinvar",
+        "find clinvar pathogenicity for BRCA1 variant",
+        "annotate clinical significance for variants"
+      ]
+    },
+    {
+      "key": "drugbank-database",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/drugbank-database",
+      "title": "drugbank-database",
+      "shortDesc": "DrugBank data access for drug properties, targets, pharmacology, and interaction analysis.",
+      "tags": [
+        "drugbank",
+        "drugs",
+        "targets",
+        "pharmacology"
+      ],
+      "useCases": [
+        "search drugbank for a drug",
+        "find drug targets",
+        "analyze drug-drug interactions"
+      ]
+    },
+    {
+      "key": "ensembl-database",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/ensembl-database",
+      "title": "ensembl-database",
+      "shortDesc": "Ensembl genome and annotation access for genes, sequences, orthologs, and VEP-style variant queries.",
+      "tags": [
+        "ensembl",
+        "genomics",
+        "annotation",
+        "orthologs"
+      ],
+      "useCases": [
+        "look up an Ensembl gene",
+        "retrieve sequence from ensembl",
+        "find orthologs across species"
       ]
     },
     {
@@ -291,42 +274,6 @@
       ]
     },
     {
-      "key": "bio-rnaseq-qc",
-      "category": "Medicalskills",
-      "path": "categories/Medicalskills/bio-rnaseq-qc",
-      "title": "bio-rnaseq-qc",
-      "shortDesc": "RNA-seq-specific quality control such as strandedness, rRNA contamination, and gene body coverage.",
-      "tags": [
-        "rna-seq",
-        "qc",
-        "rseqc",
-        "quality-control"
-      ],
-      "useCases": [
-        "check RNA-seq quality",
-        "measure rRNA contamination",
-        "verify strandedness"
-      ]
-    },
-    {
-      "key": "bio-copy-number-cnvkit-analysis",
-      "category": "Medicalskills",
-      "path": "categories/Medicalskills/bio-copy-number-cnvkit-analysis",
-      "title": "bio-copy-number-cnvkit-analysis",
-      "shortDesc": "CNVkit workflows for CNV detection from exome or targeted sequencing.",
-      "tags": [
-        "cnv",
-        "cnvkit",
-        "copy-number",
-        "wes"
-      ],
-      "useCases": [
-        "detect CNVs with CNVkit",
-        "analyze exome copy number",
-        "run tumor-normal CNV workflow"
-      ]
-    },
-    {
       "key": "galaxy-bridge",
       "category": "Medicalskills",
       "path": "categories/Medicalskills/galaxy-bridge",
@@ -342,6 +289,77 @@
         "find a Galaxy tool for RNA-seq",
         "search usegalaxy tools",
         "recommend a Galaxy workflow"
+      ]
+    },
+    {
+      "key": "gwas-database",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/gwas-database",
+      "title": "gwas-database",
+      "shortDesc": "GWAS Catalog querying for SNP-trait associations, studies, and summary-statistics context.",
+      "tags": [
+        "gwas",
+        "genetics",
+        "traits",
+        "snps"
+      ],
+      "useCases": [
+        "find GWAS hits for a disease",
+        "search rsID in GWAS catalog",
+        "look up trait-associated variants"
+      ]
+    },
+    {
+      "key": "gwas-prs",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/gwas-prs",
+      "title": "gwas-prs",
+      "shortDesc": "Polygenic risk score calculation from DTC genotype files using PGS Catalog scoring files.",
+      "tags": [
+        "prs",
+        "polygenic-risk",
+        "pgs-catalog",
+        "genetics"
+      ],
+      "useCases": [
+        "calculate a polygenic risk score",
+        "score 23andMe data with PGS Catalog",
+        "estimate PRS percentile"
+      ]
+    },
+    {
+      "key": "hello",
+      "category": "Otherskills",
+      "path": "categories/Otherskills/hello",
+      "title": "Hello",
+      "shortDesc": "Replies with exactly 'hello, world'.",
+      "tags": [
+        "hello",
+        "example",
+        "test"
+      ],
+      "useCases": [
+        "hello",
+        "say hello",
+        "give me a greeting"
+      ]
+    },
+    {
+      "key": "labarchive-integration",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/labarchive-integration",
+      "title": "labarchive-integration",
+      "shortDesc": "LabArchives ELN API automation for notebooks, entries, attachments, and backups.",
+      "tags": [
+        "labarchives",
+        "eln",
+        "notebook",
+        "api"
+      ],
+      "useCases": [
+        "automate LabArchives notebook tasks",
+        "backup a LabArchives notebook",
+        "create ELN entries programmatically"
       ]
     },
     {
@@ -381,57 +399,21 @@
       ]
     },
     {
-      "key": "labarchive-integration",
+      "key": "metabolomics-workbench-database",
       "category": "Medicalskills",
-      "path": "categories/Medicalskills/labarchive-integration",
-      "title": "labarchive-integration",
-      "shortDesc": "LabArchives ELN API automation for notebooks, entries, attachments, and backups.",
+      "path": "categories/Medicalskills/metabolomics-workbench-database",
+      "title": "metabolomics-workbench-database",
+      "shortDesc": "NIH Metabolomics Workbench access for studies, metabolites, metadata, and mass-spectrometry lookups.",
       "tags": [
-        "labarchives",
-        "eln",
-        "notebook",
-        "api"
+        "metabolomics",
+        "metabolite",
+        "nih",
+        "mass-spec"
       ],
       "useCases": [
-        "automate LabArchives notebook tasks",
-        "backup a LabArchives notebook",
-        "create ELN entries programmatically"
-      ]
-    },
-    {
-      "key": "ukb-navigator",
-      "category": "Medicalskills",
-      "path": "categories/Medicalskills/ukb-navigator",
-      "title": "ukb-navigator",
-      "shortDesc": "Semantic search over UK Biobank fields and publications to find relevant variables for a study question.",
-      "tags": [
-        "uk-biobank",
-        "ukb",
-        "schema-search",
-        "cohort"
-      ],
-      "useCases": [
-        "find UK Biobank variables for blood pressure",
-        "search UKB fields by research question",
-        "look up a UK Biobank field"
-      ]
-    },
-    {
-      "key": "gwas-prs",
-      "category": "Medicalskills",
-      "path": "categories/Medicalskills/gwas-prs",
-      "title": "gwas-prs",
-      "shortDesc": "Polygenic risk score calculation from DTC genotype files using PGS Catalog scoring files.",
-      "tags": [
-        "prs",
-        "polygenic-risk",
-        "pgs-catalog",
-        "genetics"
-      ],
-      "useCases": [
-        "calculate a polygenic risk score",
-        "score 23andMe data with PGS Catalog",
-        "estimate PRS percentile"
+        "search metabolomics workbench",
+        "look up a metabolite study",
+        "retrieve metabolomics study metadata"
       ]
     },
     {
@@ -453,57 +435,39 @@
       ]
     },
     {
-      "key": "claw-metagenomics",
+      "key": "pubmed-search",
       "category": "Medicalskills",
-      "path": "categories/Medicalskills/claw-metagenomics",
-      "title": "claw-metagenomics",
-      "shortDesc": "Shotgun metagenomics workflow covering taxonomy, resistome, and functional-pathway profiling.",
+      "path": "categories/Medicalskills/pubmed-search",
+      "title": "pubmed-search",
+      "shortDesc": "PubMed literature search for biomedical papers and recent research references.",
       "tags": [
-        "metagenomics",
-        "taxonomy",
-        "resistome",
-        "humann"
+        "pubmed",
+        "literature",
+        "papers",
+        "biomedical"
       ],
       "useCases": [
-        "profile a metagenomics sample",
-        "analyze resistome from FASTQ",
-        "run taxonomy and pathway profiling"
+        "find papers on CRISPR delivery",
+        "search pubmed for cancer studies",
+        "look up recent biomedical literature"
       ]
     },
     {
-      "key": "bio-proteomics-quantification",
+      "key": "pydeseq2",
       "category": "Medicalskills",
-      "path": "categories/Medicalskills/bio-proteomics-quantification",
-      "title": "bio-proteomics-quantification",
-      "shortDesc": "Proteomics quantification guidance for LFQ, TMT/iTRAQ, SILAC, and differential protein-abundance workflows.",
+      "path": "categories/Medicalskills/pydeseq2",
+      "title": "pydeseq2",
+      "shortDesc": "PyDESeq2-based differential gene expression analysis for bulk RNA-seq counts in Python.",
       "tags": [
-        "proteomics",
-        "mass-spec",
-        "lfq",
-        "tmt"
+        "pydeseq2",
+        "deseq2",
+        "rna-seq",
+        "differential-expression"
       ],
       "useCases": [
-        "quantify proteins from mass spec",
-        "analyze TMT proteomics",
-        "do LFQ normalization"
-      ]
-    },
-    {
-      "key": "bio-tumor-fraction-estimation",
-      "category": "Medicalskills",
-      "path": "categories/Medicalskills/bio-tumor-fraction-estimation",
-      "title": "bio-tumor-fraction-estimation",
-      "shortDesc": "ctDNA tumor-fraction estimation from shallow whole-genome sequencing using ichorCNA.",
-      "tags": [
-        "ctdna",
-        "tumor-fraction",
-        "liquid-biopsy",
-        "ichorCNA"
-      ],
-      "useCases": [
-        "estimate tumor fraction from cfDNA",
-        "run ichorCNA on shallow WGS",
-        "quantify ctDNA burden"
+        "run PyDESeq2",
+        "analyze differential expression in python",
+        "compare treated vs control RNA-seq"
       ]
     },
     {
@@ -525,32 +489,94 @@
       ]
     },
     {
-      "key": "xcrawl-scrape",
+      "key": "skill-security-review",
       "category": "UniversalSkills",
-      "path": "categories/UniversalSkills/xcrawl-scrape",
-      "title": "xcrawl-scrape",
-      "shortDesc": "XCrawl single-page web scraping skill for extracting one URL as markdown, HTML, links, screenshot, or structured JSON via XCrawl API.",
+      "path": "categories/UniversalSkills/skill-security-review",
+      "title": "Skill Security Review",
+      "shortDesc": "Review OpenClaw and agent skills for malicious behavior, prompt injection, excessive permissions, hidden actions, exfiltration paths, and compositional risk using clawvet plus structured model-based analysis.",
+      "tags": [
+        "security",
+        "skill-review",
+        "skill-audit",
+        "prompt-injection",
+        "exfiltration",
+        "permissions",
+        "agent-safety",
+        "clawvet",
+        "risk-review"
+      ],
+      "useCases": [
+        "review this skill before installing it",
+        "audit an OpenClaw skill for prompt injection and exfiltration risk",
+        "check whether this skill asks for excessive permissions",
+        "analyze a GitHub skill repo for agent safety issues",
+        "produce a structured security verdict for this skill",
+        "review a skill for hidden actions and data leakage paths"
+      ]
+    },
+    {
+      "key": "string-database",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/string-database",
+      "title": "string-database",
+      "shortDesc": "STRING protein-protein interaction network lookup and enrichment guidance.",
+      "tags": [
+        "string",
+        "ppi",
+        "protein-network",
+        "enrichment"
+      ],
+      "useCases": [
+        "find protein interaction partners",
+        "query STRING for TP53",
+        "run functional enrichment on proteins"
+      ]
+    },
+    {
+      "key": "ukb-navigator",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/ukb-navigator",
+      "title": "ukb-navigator",
+      "shortDesc": "Semantic search over UK Biobank fields and publications to find relevant variables for a study question.",
+      "tags": [
+        "uk-biobank",
+        "ukb",
+        "schema-search",
+        "cohort"
+      ],
+      "useCases": [
+        "find UK Biobank variables for blood pressure",
+        "search UKB fields by research question",
+        "look up a UK Biobank field"
+      ]
+    },
+    {
+      "key": "xcrawl-crawl",
+      "category": "UniversalSkills",
+      "path": "categories/UniversalSkills/xcrawl-crawl",
+      "title": "xcrawl-crawl",
+      "shortDesc": "XCrawl bounded website crawling skill for async multi-page extraction with depth, limit, polling, and markdown or JSON-ready outputs.",
       "tags": [
         "xcrawl",
-        "scrape",
-        "web-scraping",
-        "single-page",
+        "crawl",
+        "site-crawl",
+        "multi-page",
+        "async",
+        "polling",
+        "depth-limit",
         "markdown",
-        "html",
-        "json-extraction",
-        "screenshot",
-        "url-extraction",
+        "json",
         "ai-agent"
       ],
       "useCases": [
-        "scrape a webpage and return markdown",
-        "extract structured json from a url",
-        "fetch one page with XCrawl",
-        "抓取单个网页内容",
-        "把网页转成 markdown",
-        "提取页面里的链接和正文",
-        "scrape a page for llm input",
-        "extract page data from a website url"
+        "crawl a website and collect multiple pages",
+        "start an async crawl job",
+        "crawl docs pages with max depth and limit",
+        "批量抓取网站多个页面",
+        "异步爬取整个站点",
+        "抓取文档站并轮询结果",
+        "crawl a domain for rag data",
+        "extract many pages from a site"
       ]
     },
     {
@@ -582,32 +608,32 @@
       ]
     },
     {
-      "key": "xcrawl-crawl",
+      "key": "xcrawl-scrape",
       "category": "UniversalSkills",
-      "path": "categories/UniversalSkills/xcrawl-crawl",
-      "title": "xcrawl-crawl",
-      "shortDesc": "XCrawl bounded website crawling skill for async multi-page extraction with depth, limit, polling, and markdown or JSON-ready outputs.",
+      "path": "categories/UniversalSkills/xcrawl-scrape",
+      "title": "xcrawl-scrape",
+      "shortDesc": "XCrawl single-page web scraping skill for extracting one URL as markdown, HTML, links, screenshot, or structured JSON via XCrawl API.",
       "tags": [
         "xcrawl",
-        "crawl",
-        "site-crawl",
-        "multi-page",
-        "async",
-        "polling",
-        "depth-limit",
+        "scrape",
+        "web-scraping",
+        "single-page",
         "markdown",
-        "json",
+        "html",
+        "json-extraction",
+        "screenshot",
+        "url-extraction",
         "ai-agent"
       ],
       "useCases": [
-        "crawl a website and collect multiple pages",
-        "start an async crawl job",
-        "crawl docs pages with max depth and limit",
-        "批量抓取网站多个页面",
-        "异步爬取整个站点",
-        "抓取文档站并轮询结果",
-        "crawl a domain for rag data",
-        "extract many pages from a site"
+        "scrape a webpage and return markdown",
+        "extract structured json from a url",
+        "fetch one page with XCrawl",
+        "抓取单个网页内容",
+        "把网页转成 markdown",
+        "提取页面里的链接和正文",
+        "scrape a page for llm input",
+        "extract page data from a website url"
       ]
     },
     {
