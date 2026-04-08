@@ -328,23 +328,6 @@
       ]
     },
     {
-      "key": "hello",
-      "category": "Otherskills",
-      "path": "categories/Otherskills/hello",
-      "title": "Hello",
-      "shortDesc": "Replies with exactly 'hello, world'.",
-      "tags": [
-        "hello",
-        "example",
-        "test"
-      ],
-      "useCases": [
-        "hello",
-        "say hello",
-        "give me a greeting"
-      ]
-    },
-    {
       "key": "labarchive-integration",
       "category": "Medicalskills",
       "path": "categories/Medicalskills/labarchive-integration",
@@ -471,6 +454,82 @@
       ]
     },
     {
+      "key": "string-database",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/string-database",
+      "title": "string-database",
+      "shortDesc": "STRING protein-protein interaction network lookup and enrichment guidance.",
+      "tags": [
+        "string",
+        "ppi",
+        "protein-network",
+        "enrichment"
+      ],
+      "useCases": [
+        "find protein interaction partners",
+        "query STRING for TP53",
+        "run functional enrichment on proteins"
+      ]
+    },
+    {
+      "key": "ukb-navigator",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/ukb-navigator",
+      "title": "ukb-navigator",
+      "shortDesc": "Semantic search over UK Biobank fields and publications to find relevant variables for a study question.",
+      "tags": [
+        "uk-biobank",
+        "ukb",
+        "schema-search",
+        "cohort"
+      ],
+      "useCases": [
+        "find UK Biobank variables for blood pressure",
+        "search UKB fields by research question",
+        "look up a UK Biobank field"
+      ]
+    },
+    {
+      "key": "bazi-skill",
+      "category": "MetaphysicsSkills",
+      "path": "categories/MetaphysicsSkills/bazi-skill",
+      "title": "bazi-skill",
+      "shortDesc": "Interactive 四柱八字 / Bazi analysis skill for collecting birth details, generating a traditional chart, and producing entertainment-oriented命理 interpretations.",
+      "tags": [
+        "bazi",
+        "metaphysics",
+        "fortune-telling",
+        "astrology",
+        "chinese-metaphysics",
+        "four-pillars"
+      ],
+      "useCases": [
+        "算八字",
+        "帮我排四柱命盘",
+        "analyze my bazi chart",
+        "fortune telling from birth date",
+        "看大运和流年",
+        "八字命理娱乐分析"
+      ]
+    },
+    {
+      "key": "hello",
+      "category": "Otherskills",
+      "path": "categories/Otherskills/hello",
+      "title": "Hello",
+      "shortDesc": "Replies with exactly 'hello, world'.",
+      "tags": [
+        "hello",
+        "example",
+        "test"
+      ],
+      "useCases": [
+        "hello",
+        "say hello",
+        "give me a greeting"
+      ]
+    },
+    {
       "key": "qveris-official",
       "category": "StockSkills",
       "path": "categories/StockSkills/qveris-official",
@@ -518,42 +577,6 @@
         "produce a structured security verdict for this skill",
         "review a skill for hidden actions and data leakage paths",
         "audit an OpenClaw skill before using it"
-      ]
-    },
-    {
-      "key": "string-database",
-      "category": "Medicalskills",
-      "path": "categories/Medicalskills/string-database",
-      "title": "string-database",
-      "shortDesc": "STRING protein-protein interaction network lookup and enrichment guidance.",
-      "tags": [
-        "string",
-        "ppi",
-        "protein-network",
-        "enrichment"
-      ],
-      "useCases": [
-        "find protein interaction partners",
-        "query STRING for TP53",
-        "run functional enrichment on proteins"
-      ]
-    },
-    {
-      "key": "ukb-navigator",
-      "category": "Medicalskills",
-      "path": "categories/Medicalskills/ukb-navigator",
-      "title": "ukb-navigator",
-      "shortDesc": "Semantic search over UK Biobank fields and publications to find relevant variables for a study question.",
-      "tags": [
-        "uk-biobank",
-        "ukb",
-        "schema-search",
-        "cohort"
-      ],
-      "useCases": [
-        "find UK Biobank variables for blood pressure",
-        "search UKB fields by research question",
-        "look up a UK Biobank field"
       ]
     },
     {
