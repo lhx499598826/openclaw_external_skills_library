@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-08T12:54:57Z",
+  "generatedAt": "2026-04-08T12:55:49Z",
   "repo": "lhx499598826/openclaw_external_skills_library",
   "skills": [
     {
@@ -493,25 +493,31 @@
       "category": "UniversalSkills",
       "path": "categories/UniversalSkills/skill-security-review",
       "title": "Skill Security Review",
-      "shortDesc": "Review OpenClaw and agent skills for malicious behavior, prompt injection, excessive permissions, hidden actions, exfiltration paths, and compositional risk using clawvet plus structured model-based analysis.",
+      "shortDesc": "Security review and audit skill for checking another OpenClaw or agent skill before installation, with focus on prompt injection, exfiltration risk, excessive permissions, hidden actions, and structured safety verdicts.",
       "tags": [
         "security",
+        "skill",
+        "review",
+        "audit",
         "skill-review",
         "skill-audit",
         "prompt-injection",
         "exfiltration",
         "permissions",
+        "installation-review",
         "agent-safety",
         "clawvet",
         "risk-review"
       ],
       "useCases": [
         "review this skill before installing it",
-        "audit an OpenClaw skill for prompt injection and exfiltration risk",
+        "audit this skill for prompt injection and exfiltration risk",
+        "security review another skill before installation",
         "check whether this skill asks for excessive permissions",
         "analyze a GitHub skill repo for agent safety issues",
         "produce a structured security verdict for this skill",
-        "review a skill for hidden actions and data leakage paths"
+        "review a skill for hidden actions and data leakage paths",
+        "audit an OpenClaw skill before using it"
       ]
     },
     {
