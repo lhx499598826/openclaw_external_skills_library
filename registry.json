@@ -548,6 +548,37 @@
       ]
     },
     {
+      "key": "imap-smtp-email",
+      "category": "UniversalSkills",
+      "path": "categories/UniversalSkills/imap-smtp-email",
+      "title": "imap-smtp-email",
+      "shortDesc": "IMAP/SMTP email skill for reading mail, searching mailboxes, downloading attachments, and sending email with controlled local file access via whitelist directories.",
+      "tags": [
+        "email",
+        "imap",
+        "smtp",
+        "gmail",
+        "outlook",
+        "attachments",
+        "mail-search",
+        "mailbox",
+        "send-email",
+        "receive-email",
+        "whitelist",
+        "agent-skill"
+      ],
+      "useCases": [
+        "read email from Gmail via IMAP",
+        "search my mailbox for unread messages",
+        "fetch an email body and attachments",
+        "download email attachments to a safe directory",
+        "send an email with SMTP",
+        "send email with attachment from a whitelisted folder",
+        "check recent emails from an account",
+        "use one skill for IMAP receive and SMTP send"
+      ]
+    },
+    {
       "key": "skill-security-review",
       "category": "UniversalSkills",
       "path": "categories/UniversalSkills/skill-security-review",
