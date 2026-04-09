@@ -14,6 +14,21 @@ metadata:
 
 Read, search, and manage email via IMAP protocol. Send email via SMTP. Supports Gmail, Outlook, 163.com, vip.163.com, 126.com, vip.126.com, 188.com, vip.188.com, and any standard IMAP/SMTP server.
 
+## Quick Start
+
+```bash
+npm install
+bash setup.sh
+node scripts/imap.js check
+node scripts/smtp.js test
+```
+
+If you want to send a quick test email:
+
+```bash
+node scripts/smtp.js send --to recipient@example.com --subject hello --body hello
+```
+
 ## Configuration
 
 Run the setup script to configure your email account:
