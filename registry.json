@@ -328,54 +328,6 @@
       ]
     },
     {
-      "key": "hello",
-      "category": "Otherskills",
-      "path": "categories/Otherskills/hello",
-      "title": "Hello",
-      "shortDesc": "Replies with exactly 'hello, world'.",
-      "tags": [
-        "hello",
-        "example",
-        "test"
-      ],
-      "useCases": [
-        "hello",
-        "say hello",
-        "give me a greeting"
-      ]
-    },
-    {
-      "key": "imap-smtp-email",
-      "category": "UniversalSkills",
-      "path": "categories/UniversalSkills/imap-smtp-email",
-      "title": "imap-smtp-email",
-      "shortDesc": "IMAP/SMTP email skill for reading mail, searching mailboxes, downloading attachments, and sending email with controlled local file access via whitelist directories.",
-      "tags": [
-        "email",
-        "imap",
-        "smtp",
-        "gmail",
-        "outlook",
-        "attachments",
-        "mail-search",
-        "mailbox",
-        "send-email",
-        "receive-email",
-        "whitelist",
-        "agent-skill"
-      ],
-      "useCases": [
-        "read email from Gmail via IMAP",
-        "search my mailbox for unread messages",
-        "fetch an email body and attachments",
-        "download email attachments to a safe directory",
-        "send an email with SMTP",
-        "send email with attachment from a whitelisted folder",
-        "check recent emails from an account",
-        "use one skill for IMAP receive and SMTP send"
-      ]
-    },
-    {
       "key": "labarchive-integration",
       "category": "Medicalskills",
       "path": "categories/Medicalskills/labarchive-integration",
@@ -502,80 +454,6 @@
       ]
     },
     {
-      "key": "qimen-dunjia",
-      "category": "MetaphysicsSkills",
-      "path": "categories/MetaphysicsSkills/qimen-dunjia",
-      "title": "qimen-dunjia",
-      "shortDesc": "奇门遁甲排盘、解盘、择时与方位判断技能，先结构化访谈，再用 Python 脚本完成固定计算，最后给出可执行解读。",
-      "tags": [
-        "qimen-dunjia",
-        "奇门遁甲",
-        "metaphysics",
-        "divination",
-        "择时",
-        "方位",
-        "排盘",
-        "解盘"
-      ],
-      "useCases": [
-        "用奇门遁甲分析这件事能不能成",
-        "现在起一局奇门盘看时机和方位",
-        "帮我做奇门遁甲排盘并解盘",
-        "奇门择时和趋吉避凶建议",
-        "解释奇门盘里的值符值使与用神"
-      ]
-    },
-    {
-      "key": "qveris-official",
-      "category": "StockSkills",
-      "path": "categories/StockSkills/qveris-official",
-      "title": "qveris-official",
-      "shortDesc": "Official QVeris capability discovery skill for finance workflows; discovers currently available QVeris stock, sector, market, and capital-flow tools for the authenticated account, subject to upstream coverage and credits.",
-      "tags": [
-        "qveris",
-        "finance",
-        "stocks",
-        "capital-flow"
-      ],
-      "useCases": [
-        "discover available QVeris stock tools",
-        "check QVeris capital-flow APIs",
-        "inspect finance tools exposed by QVeris"
-      ]
-    },
-    {
-      "key": "skill-security-review",
-      "category": "UniversalSkills",
-      "path": "categories/UniversalSkills/skill-security-review",
-      "title": "Skill Security Review",
-      "shortDesc": "Security review and audit skill for checking another OpenClaw or agent skill before installation, with focus on prompt injection, exfiltration risk, excessive permissions, hidden actions, and structured safety verdicts.",
-      "tags": [
-        "security",
-        "skill",
-        "review",
-        "audit",
-        "skill-review",
-        "skill-audit",
-        "prompt-injection",
-        "exfiltration",
-        "permissions",
-        "installation-review",
-        "agent-safety",
-        "clawvet",
-        "risk-review"
-      ],
-      "useCases": [
-        "review this skill before installing it",
-        "audit this skill for prompt injection and exfiltration risk",
-        "security review another skill before installation",
-        "check whether this skill asks for excessive permissions",
-        "analyze a GitHub skill repo for agent safety issues",
-        "produce a structured security verdict for this skill",
-        "review a skill for hidden actions and data leakage paths",
-        "audit an OpenClaw skill before using it"
-      ]
-    },
-    {
       "key": "string-database",
       "category": "Medicalskills",
       "path": "categories/Medicalskills/string-database",
@@ -609,6 +487,207 @@
         "find UK Biobank variables for blood pressure",
         "search UKB fields by research question",
         "look up a UK Biobank field"
+      ]
+    },
+    {
+      "key": "qimen-dunjia",
+      "category": "MetaphysicsSkills",
+      "path": "categories/MetaphysicsSkills/qimen-dunjia",
+      "title": "qimen-dunjia",
+      "shortDesc": "奇门遁甲排盘、解盘、择时与方位判断技能，先结构化访谈，再用 Python 脚本完成固定计算，最后给出可执行解读。",
+      "tags": [
+        "qimen-dunjia",
+        "奇门遁甲",
+        "metaphysics",
+        "divination",
+        "择时",
+        "方位",
+        "排盘",
+        "解盘"
+      ],
+      "useCases": [
+        "用奇门遁甲分析这件事能不能成",
+        "现在起一局奇门盘看时机和方位",
+        "帮我做奇门遁甲排盘并解盘",
+        "奇门择时和趋吉避凶建议",
+        "解释奇门盘里的值符值使与用神"
+      ]
+    },
+    {
+      "key": "xuanzang-buddhism",
+      "category": "MetaphysicsSkills",
+      "path": "categories/MetaphysicsSkills/xuanzang-buddhism",
+      "title": "xuanzang-buddhism",
+      "shortDesc": "Xuanzang-focused Buddhism teaching skill for Yogācāra, Faxiang doctrine, ālayavijñāna, trisvabhāva, and Buddhist logic, with citation-grounded explanations.",
+      "tags": [
+        "xuanzang",
+        "buddhism",
+        "yogacara",
+        "faxiang",
+        "vijnanavada",
+        "alayavijnana",
+        "trisvabhava",
+        "hetuvidya"
+      ],
+      "useCases": [
+        "learn Yogacara Buddhism through Xuanzang",
+        "explain alayavijnana and manas in Buddhism",
+        "discuss trisvabhava and Cheng Weishi Lun",
+        "ask Xuanzang-style questions about Buddhist doctrine",
+        "study Faxiang Buddhist philosophy and logic"
+      ]
+    },
+    {
+      "key": "ziwei-doushu",
+      "category": "MetaphysicsSkills",
+      "path": "categories/MetaphysicsSkills/ziwei-doushu",
+      "title": "ziwei-doushu",
+      "shortDesc": "紫微斗数排盘与解盘技能，覆盖命宫、十二宫、主星、四化、大限与流年分析，并强调先确认口径再下结论。",
+      "tags": [
+        "ziwei-doushu",
+        "紫微斗数",
+        "metaphysics",
+        "astrology",
+        "命盘",
+        "十二宫",
+        "四化",
+        "大限"
+      ],
+      "useCases": [
+        "帮我排一个紫微斗数命盘",
+        "分析我的紫微命宫和事业宫",
+        "看紫微斗数大限流年",
+        "解释紫微斗数主星四化是什么意思",
+        "校对现有紫微盘并解读"
+      ]
+    },
+    {
+      "key": "hello",
+      "category": "Otherskills",
+      "path": "categories/Otherskills/hello",
+      "title": "Hello",
+      "shortDesc": "Replies with exactly 'hello, world'.",
+      "tags": [
+        "hello",
+        "example",
+        "test"
+      ],
+      "useCases": [
+        "hello",
+        "say hello",
+        "give me a greeting"
+      ]
+    },
+    {
+      "key": "qveris-official",
+      "category": "StockSkills",
+      "path": "categories/StockSkills/qveris-official",
+      "title": "qveris-official",
+      "shortDesc": "Official QVeris capability discovery skill for finance workflows; discovers currently available QVeris stock, sector, market, and capital-flow tools for the authenticated account, subject to upstream coverage and credits.",
+      "tags": [
+        "qveris",
+        "finance",
+        "stocks",
+        "capital-flow"
+      ],
+      "useCases": [
+        "discover available QVeris stock tools",
+        "check QVeris capital-flow APIs",
+        "inspect finance tools exposed by QVeris"
+      ]
+    },
+    {
+      "key": "imap-smtp-email",
+      "category": "UniversalSkills",
+      "path": "categories/UniversalSkills/imap-smtp-email",
+      "title": "imap-smtp-email",
+      "shortDesc": "IMAP/SMTP email skill for reading mail, searching mailboxes, downloading attachments, and sending email with controlled local file access via whitelist directories.",
+      "tags": [
+        "email",
+        "imap",
+        "smtp",
+        "gmail",
+        "outlook",
+        "attachments",
+        "mail-search",
+        "mailbox",
+        "send-email",
+        "receive-email",
+        "whitelist",
+        "agent-skill"
+      ],
+      "useCases": [
+        "read email from Gmail via IMAP",
+        "search my mailbox for unread messages",
+        "fetch an email body and attachments",
+        "download email attachments to a safe directory",
+        "send an email with SMTP",
+        "send email with attachment from a whitelisted folder",
+        "check recent emails from an account",
+        "use one skill for IMAP receive and SMTP send"
+      ]
+    },
+    {
+      "key": "obsidian",
+      "category": "UniversalSkills",
+      "path": "categories/UniversalSkills/obsidian",
+      "title": "Obsidian",
+      "shortDesc": "Work with Obsidian vaults, search notes, create or move Markdown notes safely, and automate vault workflows via obsidian-cli.",
+      "tags": [
+        "obsidian",
+        "vault",
+        "notes",
+        "markdown",
+        "knowledge-base",
+        "pkm",
+        "wikilinks",
+        "obsidian-cli",
+        "note-search",
+        "note-management",
+        "zettelkasten",
+        "personal-knowledge-management"
+      ],
+      "useCases": [
+        "search notes in an Obsidian vault",
+        "find the active Obsidian vault path",
+        "create a new Obsidian note",
+        "move or rename an Obsidian note and update wikilinks",
+        "manage markdown notes in an Obsidian vault",
+        "use obsidian-cli to automate note workflows",
+        "work with plain markdown notes in Obsidian",
+        "search note content inside an Obsidian vault"
+      ]
+    },
+    {
+      "key": "skill-security-review",
+      "category": "UniversalSkills",
+      "path": "categories/UniversalSkills/skill-security-review",
+      "title": "Skill Security Review",
+      "shortDesc": "Security review and audit skill for checking another OpenClaw or agent skill before installation, with focus on prompt injection, exfiltration risk, excessive permissions, hidden actions, and structured safety verdicts.",
+      "tags": [
+        "security",
+        "skill",
+        "review",
+        "audit",
+        "skill-review",
+        "skill-audit",
+        "prompt-injection",
+        "exfiltration",
+        "permissions",
+        "installation-review",
+        "agent-safety",
+        "clawvet",
+        "risk-review"
+      ],
+      "useCases": [
+        "review this skill before installing it",
+        "audit this skill for prompt injection and exfiltration risk",
+        "security review another skill before installation",
+        "check whether this skill asks for excessive permissions",
+        "analyze a GitHub skill repo for agent safety issues",
+        "produce a structured security verdict for this skill",
+        "review a skill for hidden actions and data leakage paths",
+        "audit an OpenClaw skill before using it"
       ]
     },
     {
@@ -724,54 +803,6 @@
         "获取指定地区语言的搜索结果",
         "search for top web results",
         "collect serp data for a query"
-      ]
-    },
-    {
-      "key": "xuanzang-buddhism",
-      "category": "MetaphysicsSkills",
-      "path": "categories/MetaphysicsSkills/xuanzang-buddhism",
-      "title": "xuanzang-buddhism",
-      "shortDesc": "Xuanzang-focused Buddhism teaching skill for Yogācāra, Faxiang doctrine, ālayavijñāna, trisvabhāva, and Buddhist logic, with citation-grounded explanations.",
-      "tags": [
-        "xuanzang",
-        "buddhism",
-        "yogacara",
-        "faxiang",
-        "vijnanavada",
-        "alayavijnana",
-        "trisvabhava",
-        "hetuvidya"
-      ],
-      "useCases": [
-        "learn Yogacara Buddhism through Xuanzang",
-        "explain alayavijnana and manas in Buddhism",
-        "discuss trisvabhava and Cheng Weishi Lun",
-        "ask Xuanzang-style questions about Buddhist doctrine",
-        "study Faxiang Buddhist philosophy and logic"
-      ]
-    },
-    {
-      "key": "ziwei-doushu",
-      "category": "MetaphysicsSkills",
-      "path": "categories/MetaphysicsSkills/ziwei-doushu",
-      "title": "ziwei-doushu",
-      "shortDesc": "紫微斗数排盘与解盘技能，覆盖命宫、十二宫、主星、四化、大限与流年分析，并强调先确认口径再下结论。",
-      "tags": [
-        "ziwei-doushu",
-        "紫微斗数",
-        "metaphysics",
-        "astrology",
-        "命盘",
-        "十二宫",
-        "四化",
-        "大限"
-      ],
-      "useCases": [
-        "帮我排一个紫微斗数命盘",
-        "分析我的紫微命宫和事业宫",
-        "看紫微斗数大限流年",
-        "解释紫微斗数主星四化是什么意思",
-        "校对现有紫微盘并解读"
       ]
     }
   ]
