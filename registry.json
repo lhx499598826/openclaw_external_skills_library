@@ -727,27 +727,27 @@
       ]
     },
     {
-      "key": "xuanzang-master",
+      "key": "xuanzang-buddhism",
       "category": "MetaphysicsSkills",
-      "path": "categories/MetaphysicsSkills/xuanzang-master",
-      "title": "xuanzang-master",
-      "shortDesc": "玄奘法师教学角色技能，面向唯识、法相、阿赖耶识、三性、因明等主题，要求基于经论引用进行严谨讲解。",
+      "path": "categories/MetaphysicsSkills/xuanzang-buddhism",
+      "title": "xuanzang-buddhism",
+      "shortDesc": "Xuanzang-focused Buddhism teaching skill for Yogācāra, Faxiang doctrine, ālayavijñāna, trisvabhāva, and Buddhist logic, with citation-grounded explanations.",
       "tags": [
         "xuanzang",
-        "玄奘",
-        "唯识",
-        "法相宗",
-        "佛学",
         "buddhism",
-        "因明",
-        "三性"
+        "yogacara",
+        "faxiang",
+        "vijnanavada",
+        "alayavijnana",
+        "trisvabhava",
+        "hetuvidya"
       ],
       "useCases": [
-        "用玄奘法师的口吻讲唯识",
-        "解释阿赖耶识和末那识",
-        "讲解三性和转识成智",
-        "讨论法相宗与成唯识论",
-        "想和玄奘法师聊佛学问题"
+        "learn Yogacara Buddhism through Xuanzang",
+        "explain alayavijnana and manas in Buddhism",
+        "discuss trisvabhava and Cheng Weishi Lun",
+        "ask Xuanzang-style questions about Buddhist doctrine",
+        "study Faxiang Buddhist philosophy and logic"
       ]
     },
     {
