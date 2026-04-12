@@ -1,0 +1,16 @@
+type: candidate
+candidate_id: cand_component_20260412_0402
+candidate_type: component
+canonical_name: component-reports-list-yaml
+observed_aliases:
+  - skills/eng-log-clean/vault/reports-list.yaml
+source_reports:
+  - rpt_20260412_174731_db7b
+source_paths:
+  - reports/daily/eng-log skill implementation and validation run 2026-04-12.md
+occurrence_count: 1
+status: candidate
+promotion_rule: occurrence_count >= 2
+last_seen_at: 2026-04-12T17:47:32Z
+expires_at: None
+reason: below threshold

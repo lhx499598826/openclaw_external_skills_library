@@ -597,6 +597,35 @@
       ]
     },
     {
+      "key": "eng-log",
+      "category": "UniversalSkills",
+      "path": "categories/UniversalSkills/eng-log",
+      "title": "eng-log",
+      "shortDesc": "Report-first engineering log and retrieval skill for generating canonical reports, maintaining layered indexes, and querying a local markdown vault with rebuildable metadata.",
+      "tags": [
+        "engineering-log",
+        "reports",
+        "retrieval",
+        "wiki",
+        "indexing",
+        "incident-report",
+        "design-log",
+        "operations-log",
+        "markdown-vault",
+        "agent-skill"
+      ],
+      "useCases": [
+        "generate a structured engineering report from work history",
+        "archive debugging or deployment work as a canonical report",
+        "build indexes over engineering reports",
+        "query old engineering reports by component or config",
+        "maintain a report-first retrieval wiki",
+        "reindex a markdown engineering log vault",
+        "look up what happened in a prior engineering task",
+        "document system design and operational changes for later retrieval"
+      ]
+    },
+    {
       "key": "imap-smtp-email",
       "category": "UniversalSkills",
       "path": "categories/UniversalSkills/imap-smtp-email",

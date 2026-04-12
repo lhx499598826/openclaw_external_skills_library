@@ -1,0 +1,16 @@
+type: candidate
+candidate_id: cand_config_20260412_775e
+candidate_type: config
+canonical_name: config-eng-log-clean-skill
+observed_aliases:
+  - eng-log-clean.skill
+source_reports:
+  - rpt_20260412_174731_db7b
+source_paths:
+  - reports/daily/eng-log skill implementation and validation run 2026-04-12.md
+occurrence_count: 1
+status: candidate
+promotion_rule: occurrence_count >= 2
+last_seen_at: 2026-04-12T17:47:33Z
+expires_at: null
+reason: below threshold
