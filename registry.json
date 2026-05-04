@@ -482,6 +482,57 @@
       ]
     },
     {
+      "key": "literature-scout",
+      "category": "ResearchSkills",
+      "path": "categories/ResearchSkills/literature-scout",
+      "title": "literature-scout",
+      "shortDesc": "Research literature-scout skill for multi-source paper search, screening, categorization, and literature-matrix construction across arXiv, Semantic Scholar, and related academic sources.",
+      "tags": [
+        "literature-search",
+        "academic-research",
+        "arxiv",
+        "semantic-scholar",
+        "papers-with-code",
+        "survey",
+        "screening",
+        "literature-matrix"
+      ],
+      "useCases": [
+        "collect papers for a survey topic",
+        "build a literature matrix for an AI research area",
+        "search arXiv and Semantic Scholar for recent methods",
+        "screen and categorize academic papers by topic",
+        "find core references and coverage gaps for a review"
+      ]
+    },
+    {
+      "key": "medical-imaging-review",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/medical-imaging-review",
+      "title": "medical-imaging-review",
+      "shortDesc": "Medical imaging AI literature-review skill for writing structured survey papers, systematic reviews, and domain-specific review drafts across CT, MRI, X-ray, ultrasound, and pathology imaging.",
+      "tags": [
+        "medical-imaging",
+        "literature-review",
+        "survey",
+        "systematic-review",
+        "radiology",
+        "ct",
+        "mri",
+        "x-ray",
+        "ultrasound",
+        "pathology",
+        "ai"
+      ],
+      "useCases": [
+        "write a medical imaging AI literature review",
+        "draft a survey paper on deep learning for MRI or CT",
+        "summarize segmentation and detection methods in radiology",
+        "prepare a systematic review for pathology imaging AI",
+        "organize PubMed and arXiv references for a medical imaging survey"
+      ]
+    },
+    {
       "key": "metabolomics-workbench-database",
       "category": "Medicalskills",
       "path": "categories/Medicalskills/metabolomics-workbench-database",
@@ -528,6 +579,28 @@
         "use obsidian-cli to automate note workflows",
         "work with plain markdown notes in Obsidian",
         "search note content inside an Obsidian vault"
+      ]
+    },
+    {
+      "key": "paper-analyst",
+      "category": "ResearchSkills",
+      "path": "categories/ResearchSkills/paper-analyst",
+      "title": "paper-analyst",
+      "shortDesc": "Academic paper-analysis skill for deep reading, structured method extraction, per-paper analysis cards, and cross-paper comparison tables for survey or review writing.",
+      "tags": [
+        "paper-analysis",
+        "academic-reading",
+        "comparison-table",
+        "survey-writing",
+        "method-extraction",
+        "literature-review"
+      ],
+      "useCases": [
+        "analyze core papers for a literature review",
+        "extract method details from top papers",
+        "build comparison tables across research papers",
+        "write structured analysis cards for academic articles",
+        "compare experiments and contributions across papers"
       ]
     },
     {
@@ -609,6 +682,29 @@
       ]
     },
     {
+      "key": "quality-editor",
+      "category": "ResearchSkills",
+      "path": "categories/ResearchSkills/quality-editor",
+      "title": "quality-editor",
+      "shortDesc": "Academic quality-editing skill for terminology consistency, citation integrity, structure review, language polishing, and structured review reports for survey manuscripts.",
+      "tags": [
+        "editing",
+        "academic-writing",
+        "quality-review",
+        "citations",
+        "terminology",
+        "manuscript-review",
+        "survey"
+      ],
+      "useCases": [
+        "review a survey manuscript for terminology consistency",
+        "check citations and structure in an academic draft",
+        "generate an academic review report for a paper",
+        "find quality issues in a literature review draft",
+        "polish a survey paper before submission"
+      ]
+    },
+    {
       "key": "qveris-official",
       "category": "StockSkills",
       "path": "categories/StockSkills/qveris-official",
@@ -624,6 +720,30 @@
         "discover available QVeris stock tools",
         "check QVeris capital-flow APIs",
         "inspect finance tools exposed by QVeris"
+      ]
+    },
+    {
+      "key": "research-proposal",
+      "category": "ResearchSkills",
+      "path": "categories/ResearchSkills/research-proposal",
+      "title": "research-proposal",
+      "shortDesc": "Academic research-proposal generation skill for PhD applications and structured research plans with literature gathering, outline approval, and long-form academic writing in English or Chinese.",
+      "tags": [
+        "research-proposal",
+        "phd",
+        "academic-writing",
+        "proposal",
+        "literature-review",
+        "zotero",
+        "english",
+        "chinese"
+      ],
+      "useCases": [
+        "write a PhD research proposal",
+        "draft a research plan for a graduate application",
+        "generate an English academic proposal from a topic",
+        "write a Chinese research proposal with literature support",
+        "turn a research idea into a structured proposal outline"
       ]
     },
     {
@@ -674,6 +794,29 @@
         "find protein interaction partners",
         "query STRING for TP53",
         "run functional enrichment on proteins"
+      ]
+    },
+    {
+      "key": "survey-writer",
+      "category": "ResearchSkills",
+      "path": "categories/ResearchSkills/survey-writer",
+      "title": "survey-writer",
+      "shortDesc": "Survey-writing skill for drafting conference-style AI or ML review papers from outlines, analysis cards, and comparison tables with citation-aware academic prose.",
+      "tags": [
+        "survey-writing",
+        "academic-writing",
+        "review-paper",
+        "literature-review",
+        "ai",
+        "ml",
+        "manuscript"
+      ],
+      "useCases": [
+        "write an AI survey paper from collected references",
+        "draft sections of a machine learning review article",
+        "turn paper analyses into academic prose",
+        "write a literature review with comparison tables",
+        "compose a conference-style survey manuscript"
       ]
     },
     {
