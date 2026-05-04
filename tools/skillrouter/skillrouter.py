@@ -255,14 +255,19 @@ def find_skill(key: str) -> Dict[str, Any]:
 
 
 def github_contents(path: str) -> Any:
-    url = f'{CONTENTS_API}/{urllib.parse.quote(path)}?ref={urllib.parse.quote(BRANCH)}'
+    encoded_path = '/'.join(urllib.parse.quote(part, safe='') for part in path.split('/'))
+    url = f'{CONTENTS_API}/{encoded_path}?ref={urllib.parse.quote(BRANCH, safe="")}'
     data = http_get(url)
     return json.loads(data.decode('utf-8'))
 
 
 def download_file(url: str, dst: Path) -> None:
     dst.parent.mkdir(parents=True, exist_ok=True)
-    data = http_get(url)
+    parsed = urllib.parse.urlsplit(url)
+    safe_path = urllib.parse.quote(parsed.path, safe='/%')
+    safe_query = urllib.parse.urlencode(urllib.parse.parse_qsl(parsed.query, keep_blank_values=True), doseq=True)
+    safe_url = urllib.parse.urlunsplit((parsed.scheme, parsed.netloc, safe_path, safe_query, parsed.fragment))
+    data = http_get(safe_url)
     dst.write_bytes(data)
 
 
