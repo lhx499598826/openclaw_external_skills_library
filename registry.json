@@ -4,6 +4,29 @@
   "repo": "lhx499598826/openclaw_external_skills_library",
   "skills": [
     {
+      "key": "akshare-stock",
+      "category": "StockSkills",
+      "path": "categories/StockSkills/akshare-stock",
+      "title": "akshare-stock",
+      "shortDesc": "基于 AkShare 的 A股行情、财务、板块、资金流与选股分析技能，无需 API key。",
+      "tags": [
+        "akshare",
+        "stocks",
+        "a-share",
+        "finance",
+        "quant",
+        "board",
+        "fund-flow"
+      ],
+      "useCases": [
+        "查询 A股历史K线",
+        "查看板块和概念行情",
+        "查看个股资金流向",
+        "搜索股票代码或名称",
+        "快速做 A股量化数据分析"
+      ]
+    },
+    {
       "key": "bio-copy-number-cnvkit-analysis",
       "category": "Medicalskills",
       "path": "categories/Medicalskills/bio-copy-number-cnvkit-analysis",
@@ -238,6 +261,35 @@
       ]
     },
     {
+      "key": "eng-log",
+      "category": "UniversalSkills",
+      "path": "categories/UniversalSkills/eng-log",
+      "title": "eng-log",
+      "shortDesc": "Report-first engineering log and retrieval skill for generating canonical reports, maintaining layered indexes, and querying a local markdown vault with rebuildable metadata.",
+      "tags": [
+        "engineering-log",
+        "reports",
+        "retrieval",
+        "wiki",
+        "indexing",
+        "incident-report",
+        "design-log",
+        "operations-log",
+        "markdown-vault",
+        "agent-skill"
+      ],
+      "useCases": [
+        "generate a structured engineering report from work history",
+        "archive debugging or deployment work as a canonical report",
+        "build indexes over engineering reports",
+        "query old engineering reports by component or config",
+        "maintain a report-first retrieval wiki",
+        "reindex a markdown engineering log vault",
+        "look up what happened in a prior engineering task",
+        "document system design and operational changes for later retrieval"
+      ]
+    },
+    {
       "key": "ensembl-database",
       "category": "Medicalskills",
       "path": "categories/Medicalskills/ensembl-database",
@@ -328,6 +380,54 @@
       ]
     },
     {
+      "key": "hello",
+      "category": "Otherskills",
+      "path": "categories/Otherskills/hello",
+      "title": "Hello",
+      "shortDesc": "Replies with exactly 'hello, world'.",
+      "tags": [
+        "hello",
+        "example",
+        "test"
+      ],
+      "useCases": [
+        "hello",
+        "say hello",
+        "give me a greeting"
+      ]
+    },
+    {
+      "key": "imap-smtp-email",
+      "category": "UniversalSkills",
+      "path": "categories/UniversalSkills/imap-smtp-email",
+      "title": "imap-smtp-email",
+      "shortDesc": "IMAP/SMTP email skill for reading mail, searching mailboxes, downloading attachments, and sending email with controlled local file access via whitelist directories.",
+      "tags": [
+        "email",
+        "imap",
+        "smtp",
+        "gmail",
+        "outlook",
+        "attachments",
+        "mail-search",
+        "mailbox",
+        "send-email",
+        "receive-email",
+        "whitelist",
+        "agent-skill"
+      ],
+      "useCases": [
+        "read email from Gmail via IMAP",
+        "search my mailbox for unread messages",
+        "fetch an email body and attachments",
+        "download email attachments to a safe directory",
+        "send an email with SMTP",
+        "send email with attachment from a whitelisted folder",
+        "check recent emails from an account",
+        "use one skill for IMAP receive and SMTP send"
+      ]
+    },
+    {
       "key": "labarchive-integration",
       "category": "Medicalskills",
       "path": "categories/Medicalskills/labarchive-integration",
@@ -400,6 +500,37 @@
       ]
     },
     {
+      "key": "obsidian",
+      "category": "UniversalSkills",
+      "path": "categories/UniversalSkills/obsidian",
+      "title": "Obsidian",
+      "shortDesc": "Work with Obsidian vaults, search notes, create or move Markdown notes safely, and automate vault workflows via obsidian-cli.",
+      "tags": [
+        "obsidian",
+        "vault",
+        "notes",
+        "markdown",
+        "knowledge-base",
+        "pkm",
+        "wikilinks",
+        "obsidian-cli",
+        "note-search",
+        "note-management",
+        "zettelkasten",
+        "personal-knowledge-management"
+      ],
+      "useCases": [
+        "search notes in an Obsidian vault",
+        "find the active Obsidian vault path",
+        "create a new Obsidian note",
+        "move or rename an Obsidian note and update wikilinks",
+        "manage markdown notes in an Obsidian vault",
+        "use obsidian-cli to automate note workflows",
+        "work with plain markdown notes in Obsidian",
+        "search note content inside an Obsidian vault"
+      ]
+    },
+    {
       "key": "pharmgx-reporter",
       "category": "Medicalskills",
       "path": "categories/Medicalskills/pharmgx-reporter",
@@ -454,42 +585,6 @@
       ]
     },
     {
-      "key": "string-database",
-      "category": "Medicalskills",
-      "path": "categories/Medicalskills/string-database",
-      "title": "string-database",
-      "shortDesc": "STRING protein-protein interaction network lookup and enrichment guidance.",
-      "tags": [
-        "string",
-        "ppi",
-        "protein-network",
-        "enrichment"
-      ],
-      "useCases": [
-        "find protein interaction partners",
-        "query STRING for TP53",
-        "run functional enrichment on proteins"
-      ]
-    },
-    {
-      "key": "ukb-navigator",
-      "category": "Medicalskills",
-      "path": "categories/Medicalskills/ukb-navigator",
-      "title": "ukb-navigator",
-      "shortDesc": "Semantic search over UK Biobank fields and publications to find relevant variables for a study question.",
-      "tags": [
-        "uk-biobank",
-        "ukb",
-        "schema-search",
-        "cohort"
-      ],
-      "useCases": [
-        "find UK Biobank variables for blood pressure",
-        "search UKB fields by research question",
-        "look up a UK Biobank field"
-      ]
-    },
-    {
       "key": "qimen-dunjia",
       "category": "MetaphysicsSkills",
       "path": "categories/MetaphysicsSkills/qimen-dunjia",
@@ -514,71 +609,6 @@
       ]
     },
     {
-      "key": "xuanzang-buddhism",
-      "category": "MetaphysicsSkills",
-      "path": "categories/MetaphysicsSkills/xuanzang-buddhism",
-      "title": "xuanzang-buddhism",
-      "shortDesc": "Xuanzang-focused Buddhism teaching skill for Yogācāra, Faxiang doctrine, ālayavijñāna, trisvabhāva, and Buddhist logic, with citation-grounded explanations.",
-      "tags": [
-        "xuanzang",
-        "buddhism",
-        "yogacara",
-        "faxiang",
-        "vijnanavada",
-        "alayavijnana",
-        "trisvabhava",
-        "hetuvidya"
-      ],
-      "useCases": [
-        "learn Yogacara Buddhism through Xuanzang",
-        "explain alayavijnana and manas in Buddhism",
-        "discuss trisvabhava and Cheng Weishi Lun",
-        "ask Xuanzang-style questions about Buddhist doctrine",
-        "study Faxiang Buddhist philosophy and logic"
-      ]
-    },
-    {
-      "key": "ziwei-doushu",
-      "category": "MetaphysicsSkills",
-      "path": "categories/MetaphysicsSkills/ziwei-doushu",
-      "title": "ziwei-doushu",
-      "shortDesc": "紫微斗数排盘与解盘技能，覆盖命宫、十二宫、主星、四化、大限与流年分析，并强调先确认口径再下结论。",
-      "tags": [
-        "ziwei-doushu",
-        "紫微斗数",
-        "metaphysics",
-        "astrology",
-        "命盘",
-        "十二宫",
-        "四化",
-        "大限"
-      ],
-      "useCases": [
-        "帮我排一个紫微斗数命盘",
-        "分析我的紫微命宫和事业宫",
-        "看紫微斗数大限流年",
-        "解释紫微斗数主星四化是什么意思",
-        "校对现有紫微盘并解读"
-      ]
-    },
-    {
-      "key": "hello",
-      "category": "Otherskills",
-      "path": "categories/Otherskills/hello",
-      "title": "Hello",
-      "shortDesc": "Replies with exactly 'hello, world'.",
-      "tags": [
-        "hello",
-        "example",
-        "test"
-      ],
-      "useCases": [
-        "hello",
-        "say hello",
-        "give me a greeting"
-      ]
-    },
-    {
       "key": "qveris-official",
       "category": "StockSkills",
       "path": "categories/StockSkills/qveris-official",
@@ -594,97 +624,6 @@
         "discover available QVeris stock tools",
         "check QVeris capital-flow APIs",
         "inspect finance tools exposed by QVeris"
-      ]
-    },
-    {
-      "key": "eng-log",
-      "category": "UniversalSkills",
-      "path": "categories/UniversalSkills/eng-log",
-      "title": "eng-log",
-      "shortDesc": "Report-first engineering log and retrieval skill for generating canonical reports, maintaining layered indexes, and querying a local markdown vault with rebuildable metadata.",
-      "tags": [
-        "engineering-log",
-        "reports",
-        "retrieval",
-        "wiki",
-        "indexing",
-        "incident-report",
-        "design-log",
-        "operations-log",
-        "markdown-vault",
-        "agent-skill"
-      ],
-      "useCases": [
-        "generate a structured engineering report from work history",
-        "archive debugging or deployment work as a canonical report",
-        "build indexes over engineering reports",
-        "query old engineering reports by component or config",
-        "maintain a report-first retrieval wiki",
-        "reindex a markdown engineering log vault",
-        "look up what happened in a prior engineering task",
-        "document system design and operational changes for later retrieval"
-      ]
-    },
-    {
-      "key": "imap-smtp-email",
-      "category": "UniversalSkills",
-      "path": "categories/UniversalSkills/imap-smtp-email",
-      "title": "imap-smtp-email",
-      "shortDesc": "IMAP/SMTP email skill for reading mail, searching mailboxes, downloading attachments, and sending email with controlled local file access via whitelist directories.",
-      "tags": [
-        "email",
-        "imap",
-        "smtp",
-        "gmail",
-        "outlook",
-        "attachments",
-        "mail-search",
-        "mailbox",
-        "send-email",
-        "receive-email",
-        "whitelist",
-        "agent-skill"
-      ],
-      "useCases": [
-        "read email from Gmail via IMAP",
-        "search my mailbox for unread messages",
-        "fetch an email body and attachments",
-        "download email attachments to a safe directory",
-        "send an email with SMTP",
-        "send email with attachment from a whitelisted folder",
-        "check recent emails from an account",
-        "use one skill for IMAP receive and SMTP send"
-      ]
-    },
-    {
-      "key": "obsidian",
-      "category": "UniversalSkills",
-      "path": "categories/UniversalSkills/obsidian",
-      "title": "Obsidian",
-      "shortDesc": "Work with Obsidian vaults, search notes, create or move Markdown notes safely, and automate vault workflows via obsidian-cli.",
-      "tags": [
-        "obsidian",
-        "vault",
-        "notes",
-        "markdown",
-        "knowledge-base",
-        "pkm",
-        "wikilinks",
-        "obsidian-cli",
-        "note-search",
-        "note-management",
-        "zettelkasten",
-        "personal-knowledge-management"
-      ],
-      "useCases": [
-        "search notes in an Obsidian vault",
-        "find the active Obsidian vault path",
-        "create a new Obsidian note",
-        "move or rename an Obsidian note and update wikilinks",
-        "manage markdown notes in an Obsidian vault",
-        "use obsidian-cli to automate note workflows",
-        "work with plain markdown notes in Obsidian",
-        "search note content inside an Obsidian vault"
       ]
     },
     {
@@ -717,6 +656,65 @@
         "produce a structured security verdict for this skill",
         "review a skill for hidden actions and data leakage paths",
         "audit an OpenClaw skill before using it"
+      ]
+    },
+    {
+      "key": "string-database",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/string-database",
+      "title": "string-database",
+      "shortDesc": "STRING protein-protein interaction network lookup and enrichment guidance.",
+      "tags": [
+        "string",
+        "ppi",
+        "protein-network",
+        "enrichment"
+      ],
+      "useCases": [
+        "find protein interaction partners",
+        "query STRING for TP53",
+        "run functional enrichment on proteins"
+      ]
+    },
+    {
+      "key": "tushare-data",
+      "category": "StockSkills",
+      "path": "categories/StockSkills/tushare-data",
+      "title": "tushare-data",
+      "shortDesc": "中文自然语言驱动的 Tushare A股/指数/基金/财务/资金流/宏观数据研究技能，需要 TUSHARE_TOKEN。",
+      "tags": [
+        "tushare",
+        "stocks",
+        "a-share",
+        "finance",
+        "macro",
+        "fund-flow",
+        "research"
+      ],
+      "useCases": [
+        "看看这只股票最近怎么样",
+        "帮我查财报趋势",
+        "最近哪个板块最强",
+        "北向资金最近在买什么",
+        "导出某只股票近两年日线 CSV"
+      ]
+    },
+    {
+      "key": "ukb-navigator",
+      "category": "Medicalskills",
+      "path": "categories/Medicalskills/ukb-navigator",
+      "title": "ukb-navigator",
+      "shortDesc": "Semantic search over UK Biobank fields and publications to find relevant variables for a study question.",
+      "tags": [
+        "uk-biobank",
+        "ukb",
+        "schema-search",
+        "cohort"
+      ],
+      "useCases": [
+        "find UK Biobank variables for blood pressure",
+        "search UKB fields by research question",
+        "look up a UK Biobank field"
       ]
     },
     {
@@ -832,6 +830,54 @@
         "获取指定地区语言的搜索结果",
         "search for top web results",
         "collect serp data for a query"
+      ]
+    },
+    {
+      "key": "xuanzang-buddhism",
+      "category": "MetaphysicsSkills",
+      "path": "categories/MetaphysicsSkills/xuanzang-buddhism",
+      "title": "xuanzang-buddhism",
+      "shortDesc": "Xuanzang-focused Buddhism teaching skill for Yogācāra, Faxiang doctrine, ālayavijñāna, trisvabhāva, and Buddhist logic, with citation-grounded explanations.",
+      "tags": [
+        "xuanzang",
+        "buddhism",
+        "yogacara",
+        "faxiang",
+        "vijnanavada",
+        "alayavijnana",
+        "trisvabhava",
+        "hetuvidya"
+      ],
+      "useCases": [
+        "learn Yogacara Buddhism through Xuanzang",
+        "explain alayavijnana and manas in Buddhism",
+        "discuss trisvabhava and Cheng Weishi Lun",
+        "ask Xuanzang-style questions about Buddhist doctrine",
+        "study Faxiang Buddhist philosophy and logic"
+      ]
+    },
+    {
+      "key": "ziwei-doushu",
+      "category": "MetaphysicsSkills",
+      "path": "categories/MetaphysicsSkills/ziwei-doushu",
+      "title": "ziwei-doushu",
+      "shortDesc": "紫微斗数排盘与解盘技能，覆盖命宫、十二宫、主星、四化、大限与流年分析，并强调先确认口径再下结论。",
+      "tags": [
+        "ziwei-doushu",
+        "紫微斗数",
+        "metaphysics",
+        "astrology",
+        "命盘",
+        "十二宫",
+        "四化",
+        "大限"
+      ],
+      "useCases": [
+        "帮我排一个紫微斗数命盘",
+        "分析我的紫微命宫和事业宫",
+        "看紫微斗数大限流年",
+        "解释紫微斗数主星四化是什么意思",
+        "校对现有紫微盘并解读"
       ]
     }
   ]
